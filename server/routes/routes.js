@@ -2,6 +2,7 @@ const express = require("express");
 const request = require("request-promise");
 const asyncWrapper = require("../middleware/async");
 const router = express.Router();
+const {getTestProducts} = require("../controllers/controllers")
 
 const apiKey = "32df47294e867894f92dcd6d71f0f58f";
 const baseURL = `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
@@ -65,5 +66,8 @@ router.get(
     res.json(JSON.parse(response));
   })
 );
+
+
+// router.get("/testing/:productId", getTestProducts);
 
 module.exports = router;
