@@ -4,7 +4,7 @@ const asyncWrapper = require("../middleware/async");
 const router = express.Router();
 const {getTestProducts} = require("../controllers/controllers")
 
-const apiKey = "09fce16c60f6dda3d33da6498220e6a5
+const apiKey = "09fce16c60f6dda3d33da6498220e6a5"
 const baseURL = `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
 
 
